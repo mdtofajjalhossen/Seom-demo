@@ -1,0 +1,706 @@
+
+/* =================================================
+    defaults css
+=================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #75717b;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+
+/* =================================================
+navbar css
+=================================================== */
+.header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 21px 0;
+    position: fixed;
+
+}
+
+
+@media (min-width: 1200px) {
+    .header .container {
+        max-width:1360px;
+    }
+}
+
+.header nav.Main-menu ul li {
+    display: inline-block;
+}
+
+.header nav.Main-menu ul li a.buyNow {
+
+    display: block;
+    color: #0766ff;
+    font-size: 16px ;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 34px;
+    border: 1px solid #0766ff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.5s;
+
+}
+
+ .header nav.Main-menu ul li a:hover {
+    background: #0766ff;
+    border-style: 0;
+    color: #fff;
+} 
+
+.Buynow_btn li a {
+    display: block;
+    color: #fff;
+    font-size: 16px ;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    background: #0766ff;
+    padding: 10px 36px;
+    border: 1px solid #0766ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.Buynow_btn li a:hover {
+    background: #fff;
+    border-color: #166bff;
+    color: #166bff;
+    transition: all 0.5s;
+}
+
+.header .Main-menu button {
+    outline: none;
+}
+
+.header .navbar-toggler i {
+    font-size: 34px;
+    line-height: 43px;
+    display: inline-block;
+}
+.header .navbar-toggler i + i {
+    display: none;
+}
+.header .navbar-toggler[aria-expanded="true"] i {
+    display: none;
+}
+
+.header .navbar-toggler[aria-expanded="true"] i + i {
+    display: inline-block;
+}
+
+.Nav-fiX {
+    transition: all 0.5s;
+}
+
+.fix_top {
+    background: #fff;
+    box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 20;
+}
+
+.header.Nav-fiX nav.Main-menu a img {
+    display: inline-block;
+    max-width: 94px;
+}
+
+/* =================================================
+    hero_css
+=================================================== */
+.hero_wrap {
+    background:#fbfbfd url(../image/background.png) no-repeat scroll  center center / cover;
+    text-align: center;
+    padding: 230px 0 170px;
+    position: relative;
+}
+.hero_wrap::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #fbfbfd;
+    z-index: -1;
+}
+
+.hero_wrap .banner_inner .bannner_innner_content h2 {
+    color: #373d46;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    max-width: 870px;
+    font-weight: 700;
+    word-spacing: -5.5px;
+}
+.bannner_innner_content h4 {
+    color: #6a7695;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 42px;
+    line-height: 30px;
+}
+
+/* =================================================
+    webpage_area-css
+=================================================== */
+
+
+@media (min-width: 1200px) {
+    .custom_container .container {
+        max-width: 1360px;
+    }
+}
+.webpage_area {
+    background: #ffffff;
+    padding: 90PX 0 65PX;
+}
+
+.custom_header h3 {
+    color: #4c4754;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 11px;
+}
+
+.custom_header p.web_pra {
+    color: #6a7695;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    max-width: 585px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.webpage_area .single_webpage a {
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+
+.webpage_area .single_webpage a img {
+    box-shadow: 0px 20px 80px 0px rgba(40, 82, 151, 0.2);
+    margin-bottom: 40px;
+}
+.single_webpage span.wep_link {
+    position: absolute;
+    background: #f00;
+    color: #fff;
+    display: block;
+    padding: 5px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 3px;
+    box-shadow: 0px 10px 40px 0px rgba(3, 24, 61, 0.1);
+    transition: all 0.5s;
+}
+
+.webpage_area .single_webpage a.webpage_name {
+    color: #373d46;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s;
+
+}
+
+.single_webpage:hover a.webpage_name {
+    color: #0765ff;
+}
+.single_webpage {
+    /* cursor: pointer; */
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.single_webpage .bg-img {
+    display: block;
+    height: 700px;
+    /* cursor: pointer; */
+    margin-bottom: 70px;
+    z-index: 2;
+    box-shadow: 0px 20px 80px 0px rgba(40, 82, 151, 0.2);
+    border-radius: 5px;
+
+  }
+  .single_webpage .bg-img a.img-hover {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    transition: all 5s;
+    width: 100%;
+    border-radius: 5px;
+    
+  }
+
+
+  .single_webpage .bg-img a:hover.img-hover {
+    background-position: center 100% !important;
+    cursor: pointer;
+  }
+
+  .single_webpage a {
+      display: block;
+  }
+
+
+/* =================================================
+llustrations_css
+=================================================== */
+.llustrations {
+    padding: 110px 0 118px;
+    position: relative;
+    background: #fbfbfd;
+}
+.ilustration {
+    position: absolute;
+    left: -57px;
+    top: 0px;
+    width: 83px;
+}
+.ilustration2 {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    width: 83px;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+.llustrations .llustration_content {
+    margin-left: 30px;
+}
+
+.llustrations .llustration_content h3 {
+    color: #373d46;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.llustrations .llustration_content p.ilustration_pra {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 490px;
+    word-spacing: 0.6px;
+    margin-bottom: 30px;
+
+}
+.CustoM_Btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background: #0766ff;
+    text-transform: capitalize;
+    padding: 10px 28px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #0766ff;
+    transition: all 0.5s;
+}
+
+.CustoM_Btn:hover {
+    background: transparent;
+    text-decoration: none;
+    border-color: #0766ff;
+    color: #0766ff;
+
+
+}
+.llustrations .llustration_content a.custom_btn {
+    text-decoration: none;
+
+}
+
+/* =================================================
+Inner_Page_css
+=================================================== */
+.Inner_Page {
+    background:#0766ff url(../image/slider-bg2.png) no-repeat scroll center center / cover;
+    padding: 90px 0 0;
+}
+
+.Inner_Page.custom_header h3 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10px;
+}
+
+.Inner_Page.custom_header p.web_pra {
+    color: #fff;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    max-width: 585px;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+.Slide_ac {
+    position: relative;
+    margin-bottom: -180px;
+    z-index: 1;
+}
+.Inner_Page .slider_item{
+    margin-bottom: 75px;
+}
+
+.Inner_Page .slider_img img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 20px 80px 0px rgba(40, 82, 151, 0.2);
+}
+.Inner_Page .slick-initialized .slick-slide {
+    outline: none;
+}
+
+
+/* =================================================
+Best_features
+=================================================== */
+.Best_features {
+    background: #fdfdfd;
+    padding: 280px 0 84px;
+    position: relative;
+    overflow: hidden;
+}
+.Best_features.custom_header h3 {
+    color: #373d46;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+}
+
+.single_feature .feature_left img {
+    max-width: 60px;
+}
+.Best_features.custom_header p.web_pra {
+    color: #6a7695;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    max-width: 585px;
+    text-align: center;
+    margin: 0 auto 60px;
+    font-size: 18px;
+}
+
+.best_feature_shape {
+    position: absolute;
+    left: -84px;
+    bottom: -50px;
+    width: 136px;
+}
+.best_feature_shape img {
+    width: 100%;
+}
+
+.single_feature {
+    background: #fff;
+    box-shadow: 0px 3px 5px 0px rgba(26, 38, 74, 0.06);
+    padding: 40px 0 40px 50px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.single_feature .feature_right {
+    margin-left: 24px;
+}
+
+.Best_features .single_feature .feature_right h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #373d46;
+    line-height: 26px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.single_feature:hover {
+    box-shadow: 0px 30px 40px 0px rgba(26, 38, 74, 0.1);
+}
+
+
+  
+/* =================================================
+elements_css
+=================================================== */
+.elements {
+    padding: 100px 0 35px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.elements .elements_content h3 {
+    color: #373d46;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 490px;
+}
+.elements .elements_content p.elements_pra {
+    color: #6a7695;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 470px;
+    margin-bottom: 35px;
+}
+.elements .elements_left {
+    margin-right: -80px;
+}
+.elements .elements_left img {
+    width: 100%;
+}
+
+
+/* =================================================
+elementor-css
+=================================================== */
+
+.elementor_wrap {
+    background: #fbfbfd;
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+}
+.shape-wrap {
+    position: absolute;
+    top: -157px;
+    left: -154px;
+}
+.elementor_dots {
+    position: absolute;
+    left: -150px;
+    bottom: 94px;
+    margin: 0 auto;
+    right: 0;
+    width: 120px;
+}
+
+.elementor_dots img {
+    width: 100%;
+}
+
+.elementor_bottom {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    z-index: 1;
+    width: 125px;
+    overflow: hidden;
+}
+
+.element_wrap_content {
+    margin-left: 50px;
+}
+.elementor_bottom img {
+    width: 100%;
+}
+
+.elementor_wrap .elementor_wr_left {
+    margin-left: -170px;
+    margin-right: -25px;
+}
+
+.elementor_wrap .elementor_wr_left img {
+    width: 100%;
+}
+.elementor_wrap .element_wrap_content img {
+    margin-bottom: 0px;
+}
+
+.elementor_wrap .element_wrap_content h3 {
+    color: #373d46;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 490px;
+}
+.elementor_wrap .element_wrap_content p.element_w_pra {
+    color: #6a7695;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 470px;
+    margin-bottom: 35px;
+}
+/* =================================================
+footer-css
+=================================================== */
+footer {
+    background: url(../image/footer-bg.png) no-repeat fixed bottom center; 
+    position: relative;
+    width: 100%;
+    padding: 104px 0 160px;
+    
+}
+ footer:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #f2f6fc;
+    z-index: -1;
+} 
+
+.purchase_content {
+    width: 100%;
+}
+.purchase_content h3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #373d46;
+    line-height: 50px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 43px;
+}
+.purchase_content .purchase_btn_more a {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    background: #166bff;
+    border-color: #166bff;
+    border: 1px solid #166bff;
+    padding: 10px 46px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.purchase_content .purchase_btn_more a:hover {
+    background: transparent;
+    color: #166bff;
+    border-color: #166bff;
+}
+
+
+/* =================================================
+animation-custom-css
+=================================================== */
+ .ilustration.faa-float.animated {
+    animation: float 1000ms linear infinite;
+}
+
+.ilustration2.faa-float.animated {
+    animation: float 900ms linear infinite;
+} 
+
+.ilustration4.faa-float.animated {
+    animation: float 1000ms linear infinite;
+}
+
+
+.elementor_dots.faa-pulse.animated {
+    animation: pulse 1s linear infinite;
+} 
+
+.elementor_bottom.faa-burst.animated {
+    animation: burst 2000Ms infinite linear;
+
+}
+
+
+@media (min-width: 768px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .collapse:not(.show) {
+        display: block;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+}
